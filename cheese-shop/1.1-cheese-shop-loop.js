@@ -3,7 +3,7 @@
  */
  
 // Declare string cheese flavor, set to Null as default.
-var cheeseType = null;\
+var cheeseType = null;
 // Define while loop that runs while cheeseType is not equal to stilton
 while (cheeseType != "stilton") {
   // Prompt user for kind of cheese.
