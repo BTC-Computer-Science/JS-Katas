@@ -5,7 +5,7 @@
  * Log it to the console
  */
  
-// var creates a global variable
+// var creates a global variable called randomizer equal to 0
 var randomint = 0; 
 // Math.random generates a random value between 0 and 1 (but not 1)
 randomint = Math.random();
