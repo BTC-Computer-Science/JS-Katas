@@ -2,7 +2,7 @@
  * Format: if (boolean expression) (statement), else if (boolean expression) (statement), else (statement)
  */
  
-// Declare string cheese flavor, set to Null as default.
+// Declare string cheeseType, set to null as default.
 var cheeseType = null;
 // Prompt user for kind of cheese.
 cheeseType = prompt("What cheese would you like?");
