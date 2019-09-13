@@ -2,7 +2,7 @@
  * Format: while (boolean == false) {} -- indent block code 
  */
  
-// Declare string cheese flavor, set to Null as default.
+// Declare string cheeseType, set to null as default.
 var cheeseType = null;
 boolean inStock = false;
 // Define while loop that runs while cheeseType is not equal to stilton
