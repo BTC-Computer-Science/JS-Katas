@@ -1,10 +1,10 @@
-/* JavaScript While Loop
+/* Guess Game: Random Integer-Driven JavaScript While Loop
  * Format: while (boolean expression) {} -- indent block code 
  */
 
-// Declare var answer, create as random integer between 1 and 100.
+// Declare var answer as random integer between 1 and 100.
 var answer = Math.floor(Math.random()*100)+1;
-// Console log the answer while testing.
+// Console log or alert the answer while testing.
 console.log(answer);
 // Declar var guess, set to 0.
 var guess = 0;
