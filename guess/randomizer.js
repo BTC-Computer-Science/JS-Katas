@@ -3,6 +3,7 @@
  * Generate a random integer between 1 and 100 
  * Alert it to the screen
  * Log it to the console
+ * NOTE: No need to make these separate lines if you can do it in one!
  */
  
 // var creates a global variable
@@ -15,7 +16,5 @@ randomint = Math.random()*100;
 randomint = Math.floor(Math.random()*100);
 // Add 1 to push range from 0-99 to 1-100
 randomint = Math.floor(Math.random()*100)+1;
-// alert creates a screen pop-up
+// alert creates a screen pop-up with the number
 alert(randomint);
-// console.log writes to the console
-console.log(randomint);
