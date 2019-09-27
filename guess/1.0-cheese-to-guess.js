@@ -3,21 +3,22 @@
  */
 
 // Declare var answer as an integer between 1 and 100.
-var answer = 24;
-// Console log or alert the answer while testing.
-console.log(answer);
-// Declar var guess, set to 0.
+var answer = 24; // any integer
+// alert the answer while testing.
+alert(answer);
+// Declare var guess, set to 0.
 var guess = 0;
 // Define while loop that runs while guess is not equal to answer
 while (guess != answer){
   	// Prompt user for guess.
 	guess=prompt("Guess my number (1-100)");
-  	/* Add conditionals giving feedback based on guess values */
-  	// too low. 
+  	/* Add conditionals that give feedback on values:  if / else if */
+  	// If guess less than answer, say too low. 
 	if(guess<answer) alert("too low");
-  	// too high. 
+  	// If guess more than answer, say too high. 
 	else if(guess>answer) alert("too high");
+	else {} // this is optional -- it means it wasn't an integer
   // Close While Loop Brackets
 }
-// Tell them they guessed it
+// Alert that they got it. 
 alert("You got it!");
