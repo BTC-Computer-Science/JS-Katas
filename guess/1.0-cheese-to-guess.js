@@ -2,8 +2,8 @@
  * Format: while (boolean expression) {} -- indent block code 
  */
 
-// Declare var answer as random integer between 1 and 100.
-var answer = Math.floor(Math.random()*100)+1;
+// Declare var answer as an integer between 1 and 100.
+var answer = 24;
 // Console log or alert the answer while testing.
 console.log(answer);
 // Declar var guess, set to 0.
@@ -12,12 +12,12 @@ var guess = 0;
 while (guess != answer){
   	// Prompt user for guess.
 	guess=prompt("Guess my number (1-100)");
-  	/* Add three conditionals that change based on guess values: if / else if / else */
-  	// First one, too low. 
+  	/* Add conditionals giving feedback based on guess values */
+  	// too low. 
 	if(guess<answer) alert("too low");
-  	// Middle one, too high. 
+  	// too high. 
 	else if(guess>answer) alert("too high");
-  	// The last one, you got it. 
-	else alert("You got it!");
   // Close While Loop Brackets
 }
+// Tell them they guessed it
+alert("You got it!");
