@@ -8,7 +8,7 @@ var cheeseType = null;
 var inStock = "stilton";
 // Define while loop that runs while cheeseType is not equal to inStock value
 while (cheeseType != inStock) {
-  // Prompt user for kind of cheese.
+  // Prompt user for kind of cheese and store that in the cheeseType variable.
   cheeseType = prompt("What cheese would you like?");
   /* Add three conditionals that change based on cheeseType values: if / else if / else */
   // First one, don't have cheddar because "We don't get much call for that around here"
