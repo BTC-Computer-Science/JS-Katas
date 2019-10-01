@@ -14,8 +14,10 @@ while (inStock == false) {
   // First one, don't have cheddar because "We don't get much call for that around here"
   if (cheeseType=="cheddar") alert("We don't get much call for that around here.");
   // Middle one, DO have it: "Here's your [cheeseType] cheese"
-  else if (cheeseType==inventory) alert("Here is your " +cheeseType+ " cheese, sir.");
-  inStock = true;
+  else if (cheeseType==inventory) {
+   alert("Here is your " +cheeseType+ " cheese, sir.");
+   inStock = true;
+  }
   // Last one, to all other requests: "Sorry, no."
   else alert("Sorry, no.");
   // Close While Loop Brackets
