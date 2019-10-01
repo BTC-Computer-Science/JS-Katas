@@ -1,4 +1,4 @@
-/* Program to demonstrate functions by raising a manually input number to itself */
+/* Program to demonstrate functions by raising an input number to itself using the Math.pow method */
 var intInput= prompt("Integer to raise to itself");
 alert(raiseToSelf(intInput));
 
