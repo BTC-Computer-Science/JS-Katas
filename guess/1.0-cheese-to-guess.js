@@ -2,8 +2,8 @@
  * Format: while (boolean expression) {} -- indent block code 
  */
 
-// Declare var answer as an integer between 1 and 100.
-var answer = 24; // any integer
+// Declare var answer as any integer between 1 and 100.
+var answer = 24; 
 // alert the answer while testing.
 alert(answer);
 // Declare var guess, set to 0.
