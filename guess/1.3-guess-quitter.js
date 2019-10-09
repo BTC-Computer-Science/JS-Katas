@@ -11,10 +11,13 @@ var guess = 0;
 // Declare var tries, set to 0.
 var tries = 0;
 // Define while loop that runs while guess is not equal to answer
-while (guess != answer && guess != "q"){
+while (guess != answer){
   // Prompt user for guess.
-	guess=prompt("Guess my number (1-100)");
-	tries++;
+  guess=prompt("Guess my number (1-100)");
+  // Check if Guess = "q" and if so, break out of loop (use break command)
+  if (guess=="q") break;
+  // Add one to tries	
+  tries++;
   /* Add feedback based on guess values: if / else if  */
   // If guess lower than answer, say too low. 
 	if(guess<answer) alert("too low");
