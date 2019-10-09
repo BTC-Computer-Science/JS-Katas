@@ -10,8 +10,6 @@ alert(answer);
 var guess = 0;
 // Declare var tries, set to 0.
 var tries = 0;
-// Declare boolean var guessValid, set to false. 
-var guessValid = false;
 // Define while loop that runs while guess is not equal to answer
 while (guess != answer){
   	// Prompt user for guess.
@@ -19,9 +17,7 @@ while (guess != answer){
 	// Call function guessValidator to see if guess valid
 	// break out of loop if guess equals q. 
         if (guess =="q") break;
-	// set guessValid to the return value of guessValidator, passing it guess as parameter
-	guessValid=guessValidator(guess);
-	// test turn and add turns if guessValid equalis true
+	// test turn and add turns if guessValidator returns true, passed guess as a parameter 
 	if (guessValid==true){
 		tries++;  // other examples: tries--, tries+=3;
 		/* Add feedback based on guess values: if / else if  */
@@ -31,6 +27,8 @@ while (guess != answer){
 		else if (guess>answer) alert("too high");
 	    // Close While Loop Brackets
 	}
+	// alert "Invalid Guess.  Try again!" otherwise (guessValidator did NOT return true)
+	else alert("Invalid guess. Retry!");
 }
 // If they guessed it, tell them they got it in however many tries. 
 if (guess == answer) alert("You got it in "+tries+" tries.");
@@ -51,10 +49,5 @@ function guessValidator(guess){
 		return true;
 	}
 	// otherwise, guess is not valid
-	else {
-		// Alert "Invalid guess. Retry!"
-		alert("Invalid guess. Retry!");
-		// return false
-		return false;
-	}
+	else return false;
 }
