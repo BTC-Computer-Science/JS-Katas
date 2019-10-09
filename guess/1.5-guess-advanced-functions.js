@@ -14,7 +14,10 @@ while (playAgain == true) {
 	while (guess != answer){
 		// Prompt user for guess.
 		guess=prompt("Guess my number (1-100)");
-		if (guessValidator == true) { 
+		// break loop if user entered "q" to quit
+		if (guess=="q") break;
+		// proceed if guess is valid (guessValidator returns true)
+		if (guessValidator(guess) == true) { 
 			/* Add conditionals that give feedback on values:  if / else if */
 			// run guessValidator(prompt) and return true if valid guess
 			// If guess less than answer, say too low. 
@@ -24,6 +27,7 @@ while (playAgain == true) {
 		    // Close While Loop Brackets
 			// Add 1 to turns
 		}
+		// otherwise, guess is not true, so tell them so. 
 		else alert("Invalid guess.  Try again.");
 	}
 	// Alert that they got it. 
@@ -35,7 +39,6 @@ while (playAgain == true) {
 /* Guess Validator 
  * Makes sure it's a good guess so turn can be counted. 
  * Check if Guess is valid integer. If so, return true. 
- * Check if Guess is "q" - if so, break (end program)
  * If Guess is invalid, return false. 
  * @param guess
  * @return boolean
