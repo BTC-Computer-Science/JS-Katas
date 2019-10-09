@@ -32,10 +32,13 @@ while (playAgain == true) {
 		// otherwise, guess is not true, so tell them so. 
 		else alert("Invalid guess.  Try again.");
 	}
-	// Alert that they got it. 
-	alert("You got it!");
-	gameStats();
-	playAgain = newGame();
+	// Alert that they got it if guess was equal to answer 
+	if (guess == answer) {
+		alert("You got it!");
+		gameStats();
+		playAgain = newGame();
+	}
+	else alert("Quitter!");
 }	
 
 /* Guess Validator 
