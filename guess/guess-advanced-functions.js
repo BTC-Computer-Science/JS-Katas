@@ -33,28 +33,35 @@ while (playAgain == true) {
 }	
 
 /* Guess Validator 
+ * Makes sure it's a good guess so turn can be counted. 
  * Check if Guess is valid integer. If so, return true. 
  * Check if Guess is "q" - if so, break (end program)
  * If Guess is invalid, return false. 
+ * @param guess
+ * @return boolean
  */
 function guessValidator(guess){
 	
 }
 
 /* Game Stats
+ * Give player feedback on performance
  * Display turns
  * Add turns to totalTurns
  * Calculate average turns = totalTurns / games
  * Display average turns
+ * @return totalturns
  */
 function gameStats(){
-	
+    	
 }
 
 /* Play Again
+ * Provide option to stop playing without quitting
  * Prompt for Y or N
  * If Y return true
  * If N alert "Thank you for playing" and return false
+ * @return boolean
  */
 function newGame(){
 	
