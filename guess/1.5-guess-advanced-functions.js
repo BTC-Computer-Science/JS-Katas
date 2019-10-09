@@ -2,6 +2,8 @@
  * Format: while (boolean expression) {} -- indent block code 
  */
 // Declare var playAgain = true
+var playAgain = true;
+// Keep playing new games as long as playAgain equals true.
 while (playAgain == true) {
 	// Declare var answer as random integer between 1 and 100.
 	var answer = Math.floor(Math.random()*100)+1;
