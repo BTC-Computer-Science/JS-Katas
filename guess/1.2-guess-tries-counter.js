@@ -14,7 +14,8 @@ var tries = 0;
 while (guess != answer){
   	// Prompt user for guess.
 	guess=prompt("Guess my number (1-100)");
-	tries++;  // other examples: tries--, tries+=3;
+	// add 1 to tries
+	tries++;  
   	/* Add feedback based on guess values: if / else if  */
   	// If guess lower than answer, say too low. 
 	if(guess<answer) alert("too low");
