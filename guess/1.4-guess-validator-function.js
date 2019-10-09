@@ -17,8 +17,9 @@ while (guess != answer){
   	// Prompt user for guess.
 	guess=prompt("Guess my number (1-100)");
 	// Call function guessValidator to see if guess valid
-	// check if guess equals q and break if so. 
-    if (guess =="q") break;
+	// break out of loop if guess equals q. 
+        if (guess =="q") break;
+	// set guessValid to the return value of guessValidator, passing it guess as parameter
 	guessValid=guessValidator(guess);
 	// test turn and add turns if guessValid equalis true
 	if (guessValid==true){
@@ -46,9 +47,10 @@ else alert("Quitter!");
 function guessValidator(guess){
 	// check if guess is valid integer in range
 	if (guess > 0 && guess < 101) {
+		// if it is, return true
 		return true;
 	}
-	// otherwise
+	// otherwise, guess is not valid
 	else {
 		// Alert "Invalid guess. Retry!"
 		alert("Invalid guess. Retry!");
