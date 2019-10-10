@@ -17,18 +17,19 @@ while (guess != answer){
 	// Call function guessValidator to see if guess valid
 	// break out of loop if guess equals q. 
         if (guess =="q") break;
-	// test turn and add turns if guessValidator returns true, passed guess as a parameter 
-	if (guessValid==true){
-		tries++;  // other examples: tries--, tries+=3;
-		/* Add feedback based on guess values: if / else if  */
+	// if guessValidator returns true
+	if (guessValidator(guess)==true){
+		// Add 1 to tries
+		tries++; 
 		// If guess lower than answer, say too low. 
 		if (guess<answer) alert("too low");
-		// If guess greater than answer, say too high. 
+		// Otherwise, if guess greater than answer, say too high. 
 		else if (guess>answer) alert("too high");
-	    // Close While Loop Brackets
+	// Close If block
 	}
-	// alert "Invalid Guess.  Try again!" otherwise (guessValidator did NOT return true)
+	// alert "Invalid Guess.  Try again!" if guessValidator does not return true.
 	else alert("Invalid guess. Retry!");
+	// Close While Loop
 }
 // If they guessed it, tell them they got it in however many tries. 
 if (guess == answer) alert("You got it in "+tries+" tries.");
@@ -43,11 +44,8 @@ else alert("Quitter!");
  * @return boolean 
  */
 function guessValidator(guess){
-	// check if guess is valid integer in range
-	if (guess > 0 && guess < 101) {
-		// if it is, return true
-		return true;
-	}
-	// otherwise, guess is not valid
+	// return true if guess is a valid integer within range 
+	if (guess > 0 && guess < 101) return true;
+	// otherwise, guess is not valid. Return false. 
 	else return false;
 }
