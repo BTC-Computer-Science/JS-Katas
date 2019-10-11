@@ -14,7 +14,6 @@ var tries = 0;
 while (guess != answer){
   	// Prompt user for guess.
 	guess=prompt("Guess my number (1-100)");
-	// Call function guessValidator to see if guess valid
 	// break out of loop if guess equals q. 
         if (guess =="q") break;
 	// if guessValidator returns true
