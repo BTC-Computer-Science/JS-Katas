@@ -28,7 +28,7 @@ while (guess != answer){
 	}
 	// alert "Invalid Guess.  Try again!" if guessValidator does not return true.
 	else alert("Invalid guess. Retry!");
-	// Close While Loop
+	// Close While Loop block
 }
 // If they guessed it, tell them they got it in however many tries. 
 if (guess == answer) alert("You got it in "+tries+" tries.");
