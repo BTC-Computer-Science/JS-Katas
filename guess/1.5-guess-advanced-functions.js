@@ -53,7 +53,7 @@ function validate(guess){
 
 /* Function gameStats
  * shows player games and average turns per game calculated as totalTurns / games
- * @param none
+ * @param turns
  * @return none
  */
 function gameStats(turns){
@@ -66,7 +66,7 @@ function gameStats(turns){
 /* Function newGame
  * Gives player option to play again (y) and returns boolean again, y = true
  * @param none
- * @return again 
+ * @return boolean  
  */
 function newGame(){
 	var again = prompt("Play again? y = yes.");
