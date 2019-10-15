@@ -1,4 +1,4 @@
-/* Guess Validate Function by Mr. M. */
+/* Guess Advanced Function by Mr. M. */
 // matches https://www.lucidchart.com/invitations/accept/78dd831f-d995-4438-909f-f9d5bbab4ed4
 
 /* Initialize Globals */
