@@ -29,7 +29,7 @@ while (again == true) {
 			}
 			else if (guess == answer) {
 				// call gameStats with turns
-				gameStats(turns);
+				gameStats(turns, totalTurns);
 				// set again equal to newGame
 				again = newGame();
 			}
@@ -55,8 +55,9 @@ function validate(guess){
  * shows player games and average turns per game calculated as totalTurns / games
  * @param turns
  * @return none
+ * @modifies totalTurns
  */
-function gameStats(turns){
+function gameStats(turns, totalTurns){
 	alert("You got it in "+turns+" turns!");
 	totalTurns += turns;
 	var averageTurns = totalTurns / games;
@@ -67,6 +68,7 @@ function gameStats(turns){
  * Gives player option to play again (y) and returns boolean again, y = true
  * @param none
  * @return boolean  
+ * @modifies again
  */
 function newGame(){
 	var again = prompt("Play again? y = yes.");
