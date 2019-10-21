@@ -36,6 +36,7 @@ while (again == true) {
 		}
 		else alert("Invalid guess, try again.");
 	}
+if (guess == "q") break;
 }
 // game is over
 
