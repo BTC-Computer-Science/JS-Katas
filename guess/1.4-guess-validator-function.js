@@ -1,5 +1,6 @@
-/* Guess Game: Random Integer-Driven JavaScript While Loop
- * Format: while (boolean expression) {} -- indent block code 
+/* Guess Validator Function: Merit Badge 2 
+ * Adds counting turns, quitting, and validating guess
+ * By Mr. M. 
  */
 
 // Declare var answer as random integer between 1 and 100.
@@ -31,7 +32,7 @@ while (guess != answer){
 	// Close While Loop block
 }
 // If they guessed it, tell them they got it in however many tries. 
-if (guess == answer) alert("You got it in "+tries+" tries.");
+if (guess == answer) alert("You got it in "+turns+" turns.");
 // Otherwise call them a quitter
 else alert("Quitter!");
 
