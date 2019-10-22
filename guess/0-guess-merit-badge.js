@@ -1,5 +1,5 @@
-/* Guess Game: Random Integer-Driven JavaScript While Loop
- * Format: while (boolean expression) {} -- indent block code 
+/* Guess Game: Merit Badge 1
+ * Your Name Here
  */
 
 // Declare var answer as random integer between 1 and 100.
