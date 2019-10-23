@@ -6,8 +6,8 @@ var scoop=1;
 var scoops = prompt("How many scoops?");
 // loop while scoop is less than or equal to scoops
 while (scoop <= scoops) {
-	// call scoopFlavor function, passing scoop as argument
-	scoopFlavor(scoop);
+	// call getScoop function, passing scoop as argument
+	getScoop(scoop);
 	// increment scoop by 1
 	scoop++;
 // close loop
@@ -15,14 +15,14 @@ while (scoop <= scoops) {
 // alert "Enjoy!"
 alert ("Enjoy!");
 
-/* function scoopFlavor
+/* function getScoop
  * checks if flavor is in stock and offers scoop if it is. 
  * inStock true for chocolate, vanilla.  Special out message for stawberry. 
  * if not in stock, keeps asking. 
  * @param scoop
  * @return none
  */
-function scoopFlavor(scoop){
+function getScoop(scoop){
 	// define inStock as boolean, set to false
 	var inStock=false;
 	// Keep looping until inStock is true
