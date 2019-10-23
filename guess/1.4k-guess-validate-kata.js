@@ -17,7 +17,7 @@ while (guess != answer){
 	guess=prompt("Guess my number (1-100)");
 	// break out of loop if guess equals q. 
 
-	// if guessValidator returns true
+	// if validator returns true
 	if (validator(guess)==true){
 		// Add 1 to turns
 
@@ -27,7 +27,7 @@ while (guess != answer){
 		else if (guess>answer) alert("too high");
 	// Close If block
 	}
-	// alert "Invalid Guess.  Try again!" if guessValidator does not return true.
+	// alert "Invalid Guess.  Try again!" if validator does not return true.
 
 	// Close While Loop block
 }
@@ -44,6 +44,6 @@ if (guess == answer) alert("You got it in "+turns+" turns.");
  * @return boolean 
  */
 
-	// return true if guess is a valid integer within range 
-	// otherwise, guess is not valid. Return false. 
+// return true if guess is a valid integer within range 
+// otherwise, guess is not valid. Return false. 
 
