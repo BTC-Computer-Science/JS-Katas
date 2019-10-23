@@ -33,12 +33,13 @@ function scoopFlavor(scoop){
 		if (flavor == "chocolate" || flavor == "vanilla"){
 			//  If scoop is in stock, show an alert with "Here's your [flavor] scoop"
 			alert("Here's your "+flavor+" scoop.");
-			// return true because flavor is in stock
+			// set inStock as true because flavor is in stock
 			inStock=true;
+			// close first conditional
 		}
-		// If strawberry, alert "Sorry, we're all out of strawberry."
+		// second condition: if strawberry, alert "Sorry, we're all out of strawberry."
 		else if (flavor == "strawberry") alert("Sorry, we're all out of "+flavor+".");
-		// Else alert "Sorry, we don't carry [flavor]."
+		// default condition: alert "Sorry, we don't carry [flavor]."
 		else alert("Sorry, we don't carry "+flavor+".");
 		// close while
 	}
