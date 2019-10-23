@@ -1,11 +1,18 @@
 /* This is for a three-scoops sundae, so you'll use a Boolean and a function.  */
 /* Main Code */
+// define scoop, start at 1
 var scoop=1;
+// define scoops asking for how many scoops desired
 var scoops = prompt("How many scoops?");
+// loop while scoop is less than or equal to scoops
 while (scoop <= scoops) {
+	// call scoopFlavor function, passing scoop as argument
 	scoopFlavor(scoop);
+	// increment scoop by 1
 	scoop++;
+// close loop
 }
+// alert "Enjoy!"
 alert ("Enjoy!");
 
 /* function scoopFlavor
@@ -16,8 +23,9 @@ alert ("Enjoy!");
  * @return none
  */
 function scoopFlavor(scoop){
-	// Keep asking until scoop in stock
+	// define inStock as boolean, set to false
 	var inStock=false;
+	// Keep looping until inStock is true
 	while (inStock==false){
 		// Prompt for a flavor by scoop number
 		var flavor = prompt("What flavor for scoop "+scoop+"?");
@@ -32,5 +40,7 @@ function scoopFlavor(scoop){
 		else if (flavor == "strawberry") alert("Sorry, we're all out of "+flavor+".");
 		// Else alert "Sorry, we don't carry [flavor]."
 		else alert("Sorry, we don't carry "+flavor+".");
+		// close while
 	}
+	// close function
 }
