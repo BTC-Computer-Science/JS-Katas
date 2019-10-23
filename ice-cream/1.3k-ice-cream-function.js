@@ -6,7 +6,7 @@
 
 // loop while scoop is less than or equal to scoops
 
-	// call scoopFlavor function, passing scoop as argument
+	// call getScoop function, passing scoop as argument
 
 	// increment scoop by 1
 
@@ -15,7 +15,7 @@
 // alert "Enjoy!"
 
 
-/* function scoopFlavor
+/* function getScoop
  * checks if flavor is in stock and offers scoop if it is. 
  * inStock true for chocolate, vanilla.  Special out message for stawberry. 
  * if not in stock, keeps asking. 
