@@ -1,24 +1,36 @@
-// This is for a three-scoops sundae, so you'll use a loop. 
-// Prompt for a flavor by scoop number
-// Use conditional logic to check responses where flavor is not equal to chocolate or vanilla
-//    If scoop is in stock, show an alert with "Here's your [flavor] scoop"
-// 	  If strawberry, alert "Sorry, we're all out of strawberry."
-// 	  Else alert "Sorry, we don't carry [flavor]."
-// allow selecting another flavor -- don't deprive user of scoops!
-// You may use a while loop if you wish.
-
-
-scoops = 3;
-for (scoop=1;scoop<scoops+1;scoop++) {
-	flavor = prompt("What flavor for scoop "+scoop+"?");
-	if (flavor == "chocolate " || flavor == "vanilla"){
-		alert("Here's your "+flavor+" scoop.");
-	}
-	else if (flavor == "strawbery") {
-		alert("Sorry, we're all out of "+flavor+".");
-	}
-	else {
-		alert("Sorry, we don't carry "+flavor+".");
-	}
+/* This is for a three-scoops sundae, so you'll use a Boolean and a function.  */
+/* Main Code */
+var scoop=1;
+var scoops = prompt("How many scoops?");
+while (scoop <= scoops) {
+	scoopFlavor(scoop);
+	scoop++;
 }
 alert ("Enjoy!");
+
+/* function scoopFlavor
+ * checks if flavor is in stock and offers scoop if it is. 
+ * inStock true for chocolate, vanilla.  Special out message for stawberry. 
+ * if not in stock, keeps asking. 
+ * @param scoop
+ * @return none
+ */
+function scoopFlavor(scoop){
+	// Keep asking until scoop in stock
+	var inStock=false;
+	while (inStock==false){
+		// Prompt for a flavor by scoop number
+		var flavor = prompt("What flavor for scoop "+scoop+"?");
+		// Use conditional logic to check responses where flavor is equal to chocolate or vanilla
+		if (flavor == "chocolate" || flavor == "vanilla"){
+			//  If scoop is in stock, show an alert with "Here's your [flavor] scoop"
+			alert("Here's your "+flavor+" scoop.");
+			// return true because flavor is in stock
+			inStock=true;
+		}
+		// If strawberry, alert "Sorry, we're all out of strawberry."
+		else if (flavor == "strawberry") alert("Sorry, we're all out of "+flavor+".");
+		// Else alert "Sorry, we don't carry [flavor]."
+		else alert("Sorry, we don't carry "+flavor+".");
+	}
+}
