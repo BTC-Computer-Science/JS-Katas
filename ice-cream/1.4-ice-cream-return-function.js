@@ -3,12 +3,12 @@
 var scoop=1;
 var scoops = prompt("How many scoops?");
 while (scoop <= scoops) {
-	alert(scoopFlavor(scoop));
+	alert(getScoop(scoop));
 	scoop++;
 }
 alert ("Enjoy!");
 
-/* function scoopFlavor
+/* function getScoop
  * checks if flavor is in stock and returns String to offers scoop if it is. 
  * return for chocolate, vanilla.  Special out message for stawberry. 
  * if not in stock, keeps asking. 
