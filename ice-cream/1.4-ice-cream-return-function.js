@@ -3,7 +3,8 @@
 var scoop=1;
 var scoops = prompt("How many scoops?");
 while (scoop <= scoops) {
-	alert(getScoop(scoop));
+	// 1) alert what the function returns, don't rely on the function to alert it
+	getScoop(scoop);
 	scoop++;
 }
 alert ("Enjoy!");
@@ -15,7 +16,7 @@ alert ("Enjoy!");
  * @param scoop
  * @return message (String)
  */
-function scoopFlavor(scoop){
+function getScoop(scoop){
 	// Keep asking until scoop in stock
 	var inStock=false;
 	while (inStock==false){
@@ -23,8 +24,8 @@ function scoopFlavor(scoop){
 		var flavor = prompt("What flavor for scoop "+scoop+"?");
 		// Use conditional logic to check responses where flavor is equal to chocolate or vanilla
 		if (flavor == "chocolate" || flavor == "vanilla"){
-			//  If scoop is in stock, show an alert with "Here's your [flavor] scoop"
-			return "Here's your "+flavor+" scoop.";
+			//  If scoop is in stock, show an alert with "Here's your [flavor] scoop" <=MOVE THIS
+			alert("Here's your "+flavor+" scoop.");
 			// return true because flavor is in stock
 			inStock=true;
 		}
@@ -33,4 +34,6 @@ function scoopFlavor(scoop){
 		// Else alert "Sorry, we don't carry [flavor]."
 		else alert("Sorry, we don't carry "+flavor+".");
 	}
+	// 2) define string message as what used to be alerted
+	// 3) return string message
 }
