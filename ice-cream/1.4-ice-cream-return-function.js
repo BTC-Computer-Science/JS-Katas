@@ -13,7 +13,7 @@ alert ("Enjoy!");
  * return for chocolate, vanilla.  Special out message for stawberry. 
  * if not in stock, keeps asking. 
  * @param scoop
- * @return String
+ * @return message (String)
  */
 function scoopFlavor(scoop){
 	// Keep asking until scoop in stock
