@@ -1,6 +1,4 @@
-/* Guess Game: Random Integer-Driven JavaScript While Loop
- * Format: while (boolean expression) {} -- indent block code 
- */
+/* Guess Game: Random Integer-Driven JavaScript While Loop */
 // Declare var playAgain = true
 var playAgain = true;
 var totalTurns = 0;
