@@ -4,7 +4,7 @@
  */
 
 // Declare var answer as random integer between 1 and 100.
-var answer = Math.floor(Math.random()*100)+1;
+
 // Alert the answer while testing.
 console.log(answer);
 // Declare var guess, set to 0.
@@ -43,7 +43,7 @@ if (guess == answer) alert("You got it in "+turns+" turns.");
  * @param guess
  * @return boolean 
  */
-
+// Define Function with guess as parameter
 // return true if guess is a valid integer within range 
 // otherwise, guess is not valid. Return false. 
 
