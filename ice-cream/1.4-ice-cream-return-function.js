@@ -7,7 +7,7 @@ while (scoop <= scoops) {
 	getScoop(scoop);
 	scoop++;
 }
-alert ("Enjoy!");
+alert("Enjoy!");
 
 /* function getScoop
  * checks if flavor is in stock and returns String to offers scoop if it is. 
