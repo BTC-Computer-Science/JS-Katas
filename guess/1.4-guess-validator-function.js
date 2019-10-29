@@ -9,7 +9,7 @@ var answer = Math.floor(Math.random()*100)+1;
 console.log(answer);
 // Declare var guess, set to 0.
 var guess = 0;
-// Declare var tries, set to 0.
+// Declare var turns, set to 0.
 var turns = 0;
 // Define while loop that runs while guess is not equal to answer
 while (guess != answer){
