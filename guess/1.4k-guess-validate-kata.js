@@ -1,10 +1,9 @@
-Guess Validator Merit Badge Helper
-
 /* Guess Validator Function: Merit Badge 2
  * Adds counting turns, quit with q, and validating guess
  * By Mr. M. 
  */
 
+/* Global Variables */
 // Declare var answer as random integer between 1 and 100.
 
 // Alert the answer while testing.
@@ -13,6 +12,7 @@ console.log(answer);
 var guess = 0;
 // Declare var turns, set to 0.
 
+/* Main Code */
 // Define while loop that runs while guess is not equal to answer
 while (guess != answer){
   	// Prompt user for guess.
@@ -35,7 +35,7 @@ while (guess != answer){
 }
 // If they guessed it, tell them they got it in however many turns. 
 if (guess == answer) alert("You got it in "+turns+" turns.");
-// Otherwise call them a quitter
+// Otherwise, call them a quitter
 
 
 /* Function validator
