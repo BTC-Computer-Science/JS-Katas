@@ -20,7 +20,7 @@ while (guess != answer){
 	// break out of loop if guess equals q. 
 	
 	// if validator returns true
-	if (validator(guess)==true){
+
 		// Add 1 to turns
 		
 		// If guess lower than answer, say too low. 
