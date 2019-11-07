@@ -6,4 +6,4 @@ var ppBoxes = prompt("How many boxes of Pink Paint do you want?");
 if (ppBoxes > rcgBoxes) alert (ppBoxes+" paint boxes is more than "+rcgBoxes+" glasses boxes.");
 else alert (ppBoxes+"ppBoxes is less than "+rcgBoxes+" rcgBoxes.");
 // Alert the total number of boxes to be delivered
-alert("Expect to receive "+(rcgBoxes + ppBoxes)+" boxes.");
+alert("Expect to receive "+(Number(rcgBoxes) + Number(ppBoxes))+" boxes.");
