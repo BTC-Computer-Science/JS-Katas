@@ -73,12 +73,10 @@ function gameStats(turns, totalTurns){
  * @modifies again
  */
 function newGame(){
-	var again = prompt("Play again? y = yes.");
-	if (again == "y") {
-		return true;
-	}
-	else {
+	var again = confirm("Play again? Cancel for no.");
+	if (again == false) {
 		alert("Sorry to see you go!");
 		return false;
 	}
+	else return false;
 }
