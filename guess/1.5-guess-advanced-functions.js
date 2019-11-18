@@ -29,7 +29,7 @@ while (again == true) {
 			}
 			else if (guess == answer) {
 				// call gameStats with turns
-				gameStats(turns, totalTurns);
+				gameStats();
 				// set again equal to newGame
 				again = newGame();
 			}
@@ -43,7 +43,7 @@ if (guess == "q") break;
 
 /* Function validate
  * Ensures guess is a valid integer within answer range
- * @param guess
+ * @param guess - just to be clear!
  * @return boolean
  */
 function validate(guess){
@@ -59,7 +59,7 @@ function validate(guess){
  * @return none
  * @modifies totalTurns
  */
-function gameStats(turns, totalTurns){
+function gameStats(){
 	alert("You got it in "+turns+" turns!");
 	totalTurns += turns;
 	var averageTurns = totalTurns / games;
