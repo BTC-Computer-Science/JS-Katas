@@ -73,10 +73,15 @@ function gameStats(){
  * @modifies again
  */
 function newGame(){
-	var again = confirm("Play again? Cancel for no.");
-	if (again == false) {
+	var playAgain = confirm("Play again? Cancel for no.");
+	if (playAgain == false) {
 		alert("Sorry to see you go!");
 		return false;
 	}
-	else return false;
+	else return true;
+}
+
+
+function elegantNewGame(){
+	return confirm("Play again? Cancel for no.");
 }
