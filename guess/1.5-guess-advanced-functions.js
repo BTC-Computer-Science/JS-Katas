@@ -28,7 +28,7 @@ while (again == true) {
 				alert("Too high!");
 			}
 			else if (guess == answer) {
-				gameStats();
+				gameStats(turns);
 				again = newGame();
 			}
 		}
@@ -58,7 +58,7 @@ function validate(guess){
  * @return none
  * @modifies totalTurns
  */
-function gameStats(){
+function gameStats(turns){
 	alert("You got it in "+turns+" turns!");
 	totalTurns += turns;
 	let averageTurns = totalTurns / games;
