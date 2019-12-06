@@ -12,7 +12,7 @@ while (again == true) {
 	var turns = 0;
 	var guess = 0;
 	var answer = Math.floor(Math.random()*100)+1;
-	// console.log(answer);
+	console.log(answer);
 	while (guess != answer){
 		guess = prompt("Guess my number (1-100).");
 		if (guess == "q"){
@@ -28,16 +28,13 @@ while (again == true) {
 				alert("Too high!");
 			}
 			else if (guess == answer) {
-				// call gameStats with turns
 				gameStats();
-				// set again equal to newGame
 				again = newGame();
 			}
 		}
 		else alert("Invalid guess, try again.");
 	}
-	// add another check for "q" and break
-if (guess == "q") break;
+	if (guess == "q") break;
 }
 // game is over
 
@@ -50,7 +47,9 @@ function validate(guess){
 	if (guess > 0 && guess < 101){
 		return true;
 	}
-	else return false;
+	else {
+		return false;
+	}
 }
 
 /* Function gameStats
@@ -62,7 +61,7 @@ function validate(guess){
 function gameStats(){
 	alert("You got it in "+turns+" turns!");
 	totalTurns += turns;
-	var averageTurns = totalTurns / games;
+	let averageTurns = totalTurns / games;
 	alert("You won "+games+" games with an average of "+averageTurns+" turns per game!");
 }
 	
@@ -70,10 +69,9 @@ function gameStats(){
  * Gives player option to play again (y) and returns boolean again, y = true
  * @param none
  * @return boolean  
- * @modifies again
  */
 function newGame(){
-	var playAgain = confirm("Play again? Cancel for no.");
+	let playAgain = confirm("Play again? Cancel for no.");
 	if (playAgain == false) {
 		alert("Sorry to see you go!");
 		return false;
@@ -81,7 +79,11 @@ function newGame(){
 	else return true;
 }
 
-
+/* Function elegantNewGame
+ * Gives player option to play again (y) and returns boolean again, y = true
+ * @param none
+ * @return boolean  
+ */
 function elegantNewGame(){
 	return confirm("Play again? Cancel for no.");
 }
