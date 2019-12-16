@@ -11,9 +11,9 @@ var students=["Ailsa","Liam","Leo","Max","Ethan","Arianna","Jasper", "Innocent",
 while(item < 20) {
 // increment the item
   item++;
-// alert the message
+// alert the message, randomly picking and displaying a student name
 	alert("Item "+item+ "will be evaluated by "+"student name");
 // close the loop
 }
 
-/* CHALLENGE: prevent loop from selecting the same student twice */
+/* CHALLENGE: prevent loop from selecting the same student twice in a row!*/
