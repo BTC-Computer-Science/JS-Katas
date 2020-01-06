@@ -18,7 +18,7 @@ function raiseToSelf(input) {
 	// define local variable called result, set it equal to intInput	
 	var result=input;
 	// create a for loop to do each multiplication: Start at 1, Stop before i = intInput, step by 1
-	for(i=1;i<input;i++) {
+	for(let i=1;i<input;i++) {
 		// multiply intPower by intInput every time you run the loop
 		result = result * input;
   	}
