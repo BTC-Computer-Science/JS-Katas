@@ -9,19 +9,19 @@
 // 	Else alert "Sorry, we don't carry [flavor]."
 // 	Allow selecting another flavor -- don't deprive user of scoops!
 
-var ourFlavors=["chocolate","vanilla","strawberry"];
-var sundaeFlavors=[];
+var ourFlavors //
+var sundaeFlavors //
 var scoops = 3;
 
 for (scoop=0;scoop<scoops;scoop++) {
 	flavor = prompt("What flavor scoop?");
-	if (inArray(flavor, ourFlavors)==true){
+	if //
 		if (flavor == "strawberry") {
 			alert("Sorry, we're all out of "+flavor+".");
 			scoop=scoop-1;
 		}
 		else {
-			sundaeFlavors[scoop]=flavor;
+			//
 		}
 	}
 	else {
@@ -32,10 +32,10 @@ for (scoop=0;scoop<scoops;scoop++) {
 alert ("Here's your "+sundaeFlavors+" sundae. Enjoy!");
 
 /* check if requested flavor is in stock */
-function inArray(svalue, tarray){
+function inArray(//
 	answer=false;
-	for (index=0;index<tarray.length;index++){
-		if (svalue==tarray[index]){
+	for (index=0;//
+		if (//
 			answer=true;
 		}
 	}
