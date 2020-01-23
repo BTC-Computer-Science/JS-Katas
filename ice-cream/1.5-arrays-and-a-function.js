@@ -13,7 +13,7 @@ var ourFlavors //
 var sundaeFlavors //
 var scoops = 3;
 
-for (scoop=0;scoop<scoops;scoop++) {
+for (let scoop=0;scoop<scoops;scoop++) {
 	let flavor = prompt("What flavor scoop?");
 	if //
 		if (flavor == "strawberry") {
