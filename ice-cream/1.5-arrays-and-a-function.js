@@ -1,4 +1,4 @@
-// We are building a sundae with scoops, so you need an array for the scoops, called ourFlavors 
+// We are building a sundae with scoops, so you need an array for the scoops, called sundaeFlavors 
 // We are checking flavor requests against flavors in stock, so you need an array called ourFlavors
 // This is for a three-scoops sundae, so you'll use a loop. 
 // Prompt for each flavor by scoop number
