@@ -13,12 +13,12 @@ var availableCheeses //
 var boughtCheeses //
 var cheesesToBuy=prompt("How many types of cheese do you want to buy today?");
 
-for (let ) {
+for (let index=0;// ) {
 	let cheeseType = prompt("What cheese would you like today, sir?");
 	if //
 		if () {
 			alert("Sorry, we're all out of "+cheeseType+".");
-			cheesesToBuy=cheesesToBuy-1;
+			index--;
 		}
 		else {
 			//
@@ -26,7 +26,7 @@ for (let ) {
 	}
 	else {
 		alert("I never heard of "+cheeseType+" cheese.");
-		cheesesToBuy=cheesesToBuy-1;
+		index--;
 		}
 } 
 alert ("Here's your "+boughtCheeses+" cheeses. Enjoy!");
